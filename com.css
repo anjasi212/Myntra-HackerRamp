@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7e2771;
+}
+
+.container {
+    max-width: fit-content;
+    background-color: #a183a3;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #7e548f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.notes-section {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.note {
+    background-color: #882987;
+    border: 2px solid #080606;
+    border-radius: 45%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.note:hover {
+    background-color: #eee;
+}
+
+.inbox {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.chat-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.chat img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-info .name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.chat-info .message {
+    margin: 0;
+    color: #777;
+}
+
+.learn-more {
+    padding: 5%;
+    border-top: 10px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.learn-more h2 {
+    margin-top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.poll {
+    margin-top: 10px;
+    font-family: cursive;
+}
+
+.poll p {
+    margin: 0;
+}
+
+.poll form {
+    display: flex;
+    flex-direction: column;
+}
+
+.poll button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.poll button:hover {
+    background-color: #0056b3;
+}
+
+#pollResults {
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.footer-button {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-button:hover {
+    background-color: #eee;
+}
+
